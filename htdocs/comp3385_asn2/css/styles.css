@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin: 0;
+    background-color: whitesmoke;
+}
+.user-data {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#uname, #email {
+    text-align: right;
+    margin: 10px;
+}
+
+#dash-button {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#pgHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-6 {
+    width: 50%;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+#logo {
+    max-width: 100%;
+    height: auto;
+    width: 150px; /* Set the width to 150px */
+    height: 150px; /* Set the height to 150px */
+}
+
+#logOut {
+    text-align: right;
+}
+
+
+.links-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links-container a {
+    margin: 0 10px; /* Adjust the margin as needed for spacing */
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.form-container input {
+    display: block; /* Each input on a new line */
+    margin-bottom: 10px; /* Adjust the margin as needed for spacing between inputs */
+}
+.col-2 {
+    display: flex;
+    justify-content: space-between; /* Adjust as needed */
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+    border-top: 1px solid black; /* Add a black line above the footer */
+    padding: 10px 0;
+}
+
+/* Mobile phone screens */
+@media only screen and (max-width: 600px) {
+    .login-container {
+        max-width: 90%;
+    }
+}
+
+/* Tablet Screens */
+@media only screen and (max-width: 768px) {
+    .login-container {
+        max-width: 80%;
+    }
+}
